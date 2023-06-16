@@ -28,12 +28,17 @@ public class ManejoArchivos {
             String leer = br.readLine();
             while(leer!=null){
                 contenido = contenido + leer +"\n";
-           
+                for(int i = 0;i<leer.length();i++){
+                    System.out.print(leer.charAt(i));
+                }
+                System.out.println("");
+                System.out.println("");
                 //System.out.println("");
                 //System.out.println(leer);
                
                 //System.out.println(rectangulo.getLista());
                 leer = br.readLine();
+                
                 
             }
             br.close();
