@@ -25,6 +25,11 @@ public class Main {
        met.leerArchivo( met.abrirArchivo(),listaRectangulo);
        System.out.println( listaRectangulo.isEmpty());
        //listaRectangulo.isEmpty();
+       int sumaAreas = 0;
+       for(Rectangulo rec : listaRectangulo){
+          sumaAreas += rec.calcularArea();
+       }
+        System.out.println("Suma area: "+sumaAreas);
     }
     
 }

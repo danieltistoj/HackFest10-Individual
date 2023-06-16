@@ -13,7 +13,8 @@ import java.util.List;
  * @author Usuario
  */
 public class Rectangulo {
-    List<Integer> lista;
+   private List<Integer> lista;
+   private  int area;
 
     public Rectangulo() {
         this.lista = new ArrayList<Integer>();
@@ -25,6 +26,21 @@ public class Rectangulo {
 
     public void setLista(List<Integer> lista) {
         this.lista = lista;
+    }
+
+    public int getArea() {
+        return area;
+    }
+
+    public void setArea(int area) {
+        this.area = area;
+    }
+    public int calcularArea(){
+        int ancho,alto;
+        ancho = lista.get(2)-lista.get(0);
+        alto = lista.get(3) - lista.get(1);
+        this.area = ancho *alto;
+        return getArea();
     }
     
 }
