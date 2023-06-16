@@ -60,10 +60,10 @@ public class ManejoArchivos {
                     }
                     
                 }
-                System.out.println("");
+                //System.out.println("");
                 //System.out.println(leer);
                 listaRectangulos.add(rectangulo);
-                System.out.println(rectangulo.getLista());
+                //System.out.println(rectangulo.getLista());
                 leer = br.readLine();
                 
             }
@@ -94,7 +94,7 @@ public class ManejoArchivos {
         if(ruta.showOpenDialog(ruta) == JFileChooser.APPROVE_OPTION){
             archivo = ruta.getSelectedFile();
            
-            System.out.println("entro");
+            //System.out.println("entro");
         }else{
             archivo =null;
         }

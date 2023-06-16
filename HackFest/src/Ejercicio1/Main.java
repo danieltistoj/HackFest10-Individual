@@ -19,11 +19,11 @@ public class Main {
      */
     public static void main(String[] args) {
         List<Rectangulo> listaRectangulo = new ArrayList<Rectangulo>();
-        System.out.println(listaRectangulo.isEmpty());
+       // System.out.println(listaRectangulo.isEmpty());
         ManejoArchivos met = new ManejoArchivos();
        // met.abrirArchivo();
        met.leerArchivo( met.abrirArchivo(),listaRectangulo);
-       System.out.println( listaRectangulo.isEmpty());
+       //System.out.println( listaRectangulo.isEmpty());
        //listaRectangulo.isEmpty();
        int sumaAreas = 0;
        for(Rectangulo rec : listaRectangulo){
